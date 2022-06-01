@@ -13,6 +13,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
 import { ExpoCameraScreen } from './expo/ExpoCameraScreen';
 import { Launcher } from './Launcher';
+import { RNCKCameraScreen } from './rnck/RNCKCameraScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -22,6 +23,7 @@ const App = () => {
       <Stack.Navigator initialRouteName="Launcher">
         <Stack.Screen name="Launcher" component={Launcher} />
         <Stack.Screen name="ExpoCamera" component={ExpoCameraScreen} />
+        <Stack.Screen name="RNCKCamera" component={RNCKCameraScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

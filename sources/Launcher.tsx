@@ -5,11 +5,17 @@ import { Button, View } from 'react-native';
 export const Launcher = () => {
   const navigation = useNavigation();
   return (
-    <View>
+    <View style={{ flex: 1, justifyContent: 'space-around' }}>
       <Button
         title="Expo"
         onPress={() => {
           (navigation.navigate as any)('ExpoCamera');
+        }}
+      />
+      <Button
+        title="ReactNativeCameraKit"
+        onPress={() => {
+          (navigation.navigate as any)('RNCKCamera');
         }}
       />
     </View>
