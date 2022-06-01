@@ -14,6 +14,7 @@ import React from 'react';
 import { ExpoCameraScreen } from './expo/ExpoCameraScreen';
 import { Launcher } from './Launcher';
 import { RNCKCameraScreen } from './rnck/RNCKCameraScreen';
+import { RNVCCameraScreen } from './rnvc/RNVCCameraScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -24,6 +25,7 @@ const App = () => {
         <Stack.Screen name="Launcher" component={Launcher} />
         <Stack.Screen name="ExpoCamera" component={ExpoCameraScreen} />
         <Stack.Screen name="RNCKCamera" component={RNCKCameraScreen} />
+        <Stack.Screen name="RNVCCamera" component={RNVCCameraScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

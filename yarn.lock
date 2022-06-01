@@ -1094,7 +1094,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-object-assign@npm:^7.0.0":
+"@babel/plugin-transform-object-assign@npm:^7.0.0, @babel/plugin-transform-object-assign@npm:^7.16.7":
   version: 7.16.7
   resolution: "@babel/plugin-transform-object-assign@npm:7.16.7"
   dependencies:
@@ -1431,7 +1431,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-typescript@npm:^7.13.0":
+"@babel/preset-typescript@npm:^7.13.0, @babel/preset-typescript@npm:^7.16.7":
   version: 7.17.12
   resolution: "@babel/preset-typescript@npm:7.17.12"
   dependencies:
@@ -2745,6 +2745,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/invariant@npm:^2.2.35":
+  version: 2.2.35
+  resolution: "@types/invariant@npm:2.2.35"
+  checksum: af1b624057c89789ed0917838fea3d42bb0c101cc22b829a24d8777c678be3bc79d6ae05992a13bdf607b94731262467a2e62a809602ea1f7eea5e8c2242660d
+  languageName: node
+  linkType: hard
+
 "@types/istanbul-lib-coverage@npm:*, @types/istanbul-lib-coverage@npm:^2.0.0, @types/istanbul-lib-coverage@npm:^2.0.1":
   version: 2.0.4
   resolution: "@types/istanbul-lib-coverage@npm:2.0.4"
@@ -3155,10 +3162,13 @@ __metadata:
     react: 17.0.2
     react-native: 0.68.2
     react-native-camera-kit: ^12.1.0
+    react-native-reanimated: ^2.8.0
     react-native-safe-area-context: ^4.2.5
     react-native-screens: ^3.13.1
+    react-native-vision-camera: ^2.13.3
     react-test-renderer: 17.0.2
     typescript: ^4.4.4
+    vision-camera-code-scanner: ^0.2.0
   languageName: unknown
   linkType: soft
 
@@ -8306,6 +8316,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash.isequal@npm:^4.5.0":
+  version: 4.5.0
+  resolution: "lodash.isequal@npm:4.5.0"
+  checksum: da27515dc5230eb1140ba65ff8de3613649620e8656b19a6270afe4866b7bd461d9ba2ac8a48dcc57f7adac4ee80e1de9f965d89d4d81a0ad52bb3eec2609644
+  languageName: node
+  linkType: hard
+
 "lodash.merge@npm:^4.6.2":
   version: 4.6.2
   resolution: "lodash.merge@npm:4.6.2"
@@ -10169,6 +10186,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-native-reanimated@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "react-native-reanimated@npm:2.8.0"
+  dependencies:
+    "@babel/plugin-transform-object-assign": ^7.16.7
+    "@babel/preset-typescript": ^7.16.7
+    "@types/invariant": ^2.2.35
+    invariant: ^2.2.4
+    lodash.isequal: ^4.5.0
+    setimmediate: ^1.0.5
+    string-hash-64: ^1.0.3
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+    react: "*"
+    react-native: "*"
+  checksum: 6409a941a177d04d9091953a05f493d4924eb0d3e2a4b24cf83bb20460b985f89dd879f0ab7337655dba6a3183ca50cc2ad2b3ea1c505cdc1eed6c5ee1296b59
+  languageName: node
+  linkType: hard
+
 "react-native-safe-area-context@npm:^4.2.5":
   version: 4.2.5
   resolution: "react-native-safe-area-context@npm:4.2.5"
@@ -10189,6 +10225,16 @@ __metadata:
     react: "*"
     react-native: "*"
   checksum: aaab7071f65ea7b3be197417e073d0cad06c80fcb2a956faaeb020322c8002963f4d14ba96550484e96d156a48a29989c1485f47ec4bcd98c9701fe8de5c7cc1
+  languageName: node
+  linkType: hard
+
+"react-native-vision-camera@npm:^2.13.3":
+  version: 2.13.3
+  resolution: "react-native-vision-camera@npm:2.13.3"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: fb56afd1698f4bd6f169ecee7d09d4944f78bd28fab8c7a320659995b38c2d58b16e7418ee906989557d3fcbf14fd2ab8256245f7ca5d370879d6831cbfd08c4
   languageName: node
   linkType: hard
 
@@ -11355,6 +11401,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"string-hash-64@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "string-hash-64@npm:1.0.3"
+  checksum: 79de8431b4fa3e85a2429cd52a34f7948221ff167b7a094e05d6bcfd0173474b232e0c9845c96f74b0d7b6b0c8bbe2c3532a4cacb21635293ef0cf3cc8e77f06
+  languageName: node
+  linkType: hard
+
 "string-length@npm:^4.0.1":
   version: 4.0.2
   resolution: "string-length@npm:4.0.2"
@@ -12286,6 +12339,17 @@ __metadata:
   version: 1.1.2
   resolution: "vary@npm:1.1.2"
   checksum: ae0123222c6df65b437669d63dfa8c36cee20a504101b2fcd97b8bf76f91259c17f9f2b4d70a1e3c6bbcee7f51b28392833adb6b2770b23b01abec84e369660b
+  languageName: node
+  linkType: hard
+
+"vision-camera-code-scanner@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "vision-camera-code-scanner@npm:0.2.0"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+    react-native-vision-camera: ">=2.9.4"
+  checksum: d3cee8df7a04be024a1a183de739d7acb67e86214e56fc634b6d0a07fc7fcdc6da3b2f91b2ea276065f39847debe8855e88636d09d2ca4f7022b7c873b50b20d
   languageName: node
   linkType: hard
 

@@ -18,6 +18,12 @@ export const Launcher = () => {
           (navigation.navigate as any)('RNCKCamera');
         }}
       />
+      <Button
+        title="ReactNativeiVisionCamera"
+        onPress={() => {
+          (navigation.navigate as any)('RNVCCamera');
+        }}
+      />
     </View>
   );
 };
