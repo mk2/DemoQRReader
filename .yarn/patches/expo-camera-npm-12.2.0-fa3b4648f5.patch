@@ -1,0 +1,13 @@
+diff --git a/android/src/main/java/expo/modules/camera/tasks/BarCodeScannerAsyncTask.kt b/android/src/main/java/expo/modules/camera/tasks/BarCodeScannerAsyncTask.kt
+index c3c900a76eb2767701db133308fb8c0ec5b114d2..da35f4dc285c874f6160468e20698872d8c34f7a 100644
+--- a/android/src/main/java/expo/modules/camera/tasks/BarCodeScannerAsyncTask.kt
++++ b/android/src/main/java/expo/modules/camera/tasks/BarCodeScannerAsyncTask.kt
+@@ -21,6 +21,7 @@ class BarCodeScannerAsyncTask(
+     super.onPostExecute(result)
+     result?.let {
+       delegate.onBarCodeScanned(result)
+-    } ?: delegate.onBarCodeScanningTaskCompleted()
++    }
++    delegate.onBarCodeScanningTaskCompleted()
+   }
+ }
