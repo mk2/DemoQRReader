@@ -39,7 +39,7 @@
   },
   "resolutions": {
     "@types/react": "^17",
-    "expo-camera@12.2.0": "patch:expo-camera@npm:12.2.0#.yarn/patches/expo-camera-npm-12.2.0-fa3b4648f5.patch"
+    "expo-camera": "patch:expo-camera@npm:12.2.0#.yarn/patches/expo-camera-npm-12.2.0-fa3b4648f5.patch"
   },
   "jest": {
     "preset": "react-native",

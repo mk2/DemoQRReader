@@ -5629,7 +5629,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expo-camera@npm:^12.2.0":
+"expo-camera@npm:12.2.0":
   version: 12.2.0
   resolution: "expo-camera@npm:12.2.0"
   dependencies:
@@ -5639,6 +5639,19 @@ __metadata:
   peerDependencies:
     expo: "*"
   checksum: c34187495a19feb614ab9aa8f6dac1bbf1b4249c40da9ff61ecf66953eb82105fc115ce154837b141b80741f377205c811fb72ef72fca26990cbeed0b9571fc0
+  languageName: node
+  linkType: hard
+
+"expo-camera@patch:expo-camera@npm:12.2.0#.yarn/patches/expo-camera-npm-12.2.0-fa3b4648f5.patch::locator=DemoQRReader%40workspace%3A.":
+  version: 12.2.0
+  resolution: "expo-camera@patch:expo-camera@npm%3A12.2.0#.yarn/patches/expo-camera-npm-12.2.0-fa3b4648f5.patch::version=12.2.0&hash=f4772e&locator=DemoQRReader%40workspace%3A."
+  dependencies:
+    "@expo/config-plugins": ^4.0.14
+    "@koale/useworker": ^4.0.2
+    invariant: ^2.2.4
+  peerDependencies:
+    expo: "*"
+  checksum: ee9f010074626b2a03416b4ec2f6938a80759d9e242195765fd3a8e1ffc4c5778b98e93e506f8d8fe6129e3aba3661d6d85079d6cd1dcf100201be9f1594c3a1
   languageName: node
   linkType: hard
 
